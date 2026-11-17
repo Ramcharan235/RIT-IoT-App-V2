@@ -1,0 +1,8 @@
+{
+  "appId": "com.rit.control",
+  "appName": "RIT IoT",
+  "webDir": "www",
+  "server": { "androidScheme": "https", "cleartext": true },
+  "android": { "allowMixedContent": true },
+  "plugins": { "CapacitorHttp": { "enabled": true } }
+}

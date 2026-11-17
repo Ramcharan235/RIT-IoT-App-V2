@@ -1,0 +1,19 @@
+{
+  "name": "rit-iot-esp8266",
+  "version": "3.0.0",
+  "private": true,
+  "description": "ESP8266 NodeMCU Wi-Fi learning and control app",
+  "scripts": {
+    "generate": "python3 scripts/generate.py",
+    "android:prepare": "node scripts/prepare-android.mjs",
+    "sync": "cap sync android",
+    "test": "node --check www/app.js && node --check www/projects.js && python3 scripts/check.py"
+  },
+  "dependencies": {
+    "@capacitor/android": "7.4.3",
+    "@capacitor/core": "7.4.3",
+    "@capacitor/app": "7.1.0",
+    "@capacitor-community/speech-recognition": "7.0.1"
+  },
+  "devDependencies": { "@capacitor/cli": "7.4.3" }
+}
